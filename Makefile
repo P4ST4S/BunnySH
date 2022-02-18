@@ -11,7 +11,7 @@ EXEC = bsh
 SRC = $(shell find ./ -name "*.c")
 OBJ = $(SRC:.c=.o)
 ECHO = /bin/echo -e
-FLAG = -I./include/read/ -I./include/lib/ -g -g3 #-W -Wall -Werror
+FLAG = -I./include/ -I./include/read/ -I./include/lib/ -I./include/shell_function/ -g -g3 -W -Wall -Werror
 LIB = -llapin -lsfml-graphics -lsfml-audio -lsfml-window -lsfml-system -lstdc++ -lm -ldl -lpthread -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_core -lavcall -lusb -std=c11
 
 ######################################################################################################################################################################
