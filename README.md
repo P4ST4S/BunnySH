@@ -13,7 +13,7 @@ To do this work, I needed to use what is called the environment. The environment
 
 The third parameter is the environment. It is a NULL pointer terminated string array. The environment strings look like this:
 
-NAME_OF_VALUE=VALUE
+`NAME_OF_VALUE=VALUE`
 
 Why did I need the environment? Because it contains the PATH variable, consisting of a series of folders separated by the ':' character. These folders are the ones used when you type a command to find the program that matches it. Example: when you type “ls”, your shell looks in the path and finds… /bin/ which contains the program “ls”, and therefore it executes “/bin/ls”. In addition, it will pass it the parameters that you have typed.
 
