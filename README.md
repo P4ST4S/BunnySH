@@ -3,7 +3,7 @@
 
 BunnySH is an complete shell created in C. It's an Ecole 89's project.
 
-##Project goal
+## Project goal
 
 My job will be to make a command line software.
 
