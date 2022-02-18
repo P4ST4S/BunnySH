@@ -9,7 +9,7 @@ My job will be to make a command line software.
 
 To do this work, I needed to use what is called the environment. The environment is a set of keys associated with values. You can observe this environment in your shell by typing the "env" command. To get this environment into your program… you will need to have the full definition of main. That definition is here:
 
-#####int main(int argc, char *argv[], char **env);
+`int main(int argc, char *argv[], char **env);`
 
 The third parameter is the environment. It is a NULL pointer terminated string array. The environment strings look like this:
 
