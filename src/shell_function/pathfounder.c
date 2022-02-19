@@ -1,3 +1,11 @@
+/**
+ * @ Author: Antoine ROSPARS
+ * @ Create Time: 2022-02-19 17:07:57
+ * @ Modified by: Antoine ROSPARS
+ * @ Modified time: 2022-02-19 17:10:14
+ * @ Copyright: © Antoine ROSPARS - All Rights Reserved.
+ */
+
 #include "pathfounder.h"
 
 char *pathFounder(char **env, char *search)
