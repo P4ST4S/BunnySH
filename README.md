@@ -30,3 +30,5 @@
   The user should also be able to enter the "cd" command which is also part of the shell itself. You can use the chdir function to implement it. Don't forget to update the PWD environment variable if it exists.
 
   Typing the $ symbol followed by a name instructs the shell to replace the set with the value of the environment variable whose name was specified.
+
+# Copyright © Antoine ROSPARS - All Rights Reserved.
