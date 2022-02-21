@@ -2,7 +2,7 @@
  * @ Author: Antoine ROSPARS
  * @ Create Time: 2022-02-19 17:07:57
  * @ Modified by: Antoine ROSPARS
- * @ Modified time: 2022-02-19 17:10:27
+ * @ Modified time: 2022-02-21 13:59:06
  * @ Copyright: © Antoine ROSPARS - All Rights Reserved.
  */
 
@@ -10,7 +10,7 @@
 
 int envFounder(char **env, char *search, int mode, char *cd)
 {
-    int i = 0, j = 0;
+    int i = 0, j = 0, k = 0;
 
     while (env[i] != NULL)
     {
@@ -35,6 +35,19 @@ int envFounder(char **env, char *search, int mode, char *cd)
                 j = std_strlen(env[i]);
                 while (env[i][j] != '/')
                     j--;
+                env[i][j] = '\0';
+            }
+            else if (mode == 5)
+            {
+                while (env[i][j] != '=')
+                    j++;
+                j++;
+                while (cd[k] != '\0')
+                {
+                    env[i][j] = cd[k];
+                    k++;
+                    j++;
+                }
                 env[i][j] = '\0';
             }
             return (i);

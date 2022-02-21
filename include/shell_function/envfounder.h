@@ -2,7 +2,7 @@
  * @ Author: Antoine ROSPARS
  * @ Create Time: 2022-02-19 17:07:57
  * @ Modified by: Antoine ROSPARS
- * @ Modified time: 2022-02-19 17:11:53
+ * @ Modified time: 2022-02-21 13:39:09
  * @ Copyright: © Antoine ROSPARS - All Rights Reserved.
  */
 
@@ -14,6 +14,7 @@
 #include "strlen.h"
 #include "strncmp.h"
 #include "strmerge.h"
+#include "strcpy.h"
 
 int envFounder(char **env, char *search, int mode, char *cd);
 

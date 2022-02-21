@@ -2,11 +2,12 @@
  * @ Author: Antoine ROSPARS
  * @ Create Time: 2022-02-19 17:07:57
  * @ Modified by: Antoine ROSPARS
- * @ Modified time: 2022-02-19 17:10:05
+ * @ Modified time: 2022-02-21 13:59:55
  * @ Copyright: © Antoine ROSPARS - All Rights Reserved.
  */
 
 #include "main.h"
+#include <stdio.h>
 
 static void freeARGV(char **argv)
 {
@@ -63,10 +64,9 @@ int main(int argc, char **argv, char **env)
             argc = 3;
             if (std_strncmp(cmd, "cd", std_strlen("cd")) == 0)
             {
-                if (argv[1] != NULL)
-                    path_cd(argv, pathCD, env);
-                else
-                    write(1, "Please specify directory.\n", 27);
+                if (argv[1] == NULL || argv[1][0] == '~')
+                    argv[1] = pathFounder(env, "HOME");
+                path_cd(argv, pathCD, env);
             }
             if (std_strcmp(cmd_read, "exit") == 0)
                 exit = 0;

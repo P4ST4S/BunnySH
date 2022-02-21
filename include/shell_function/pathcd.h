@@ -2,7 +2,7 @@
  * @ Author: Antoine ROSPARS
  * @ Create Time: 2022-02-19 17:07:57
  * @ Modified by: Antoine ROSPARS
- * @ Modified time: 2022-02-19 17:11:48
+ * @ Modified time: 2022-02-21 13:37:24
  * @ Copyright: © Antoine ROSPARS - All Rights Reserved.
  */
 
@@ -14,6 +14,7 @@
 #include "strmerge.h"
 #include "strcmp.h"
 #include "envfounder.h"
+#include "pathfounder.h"
 
 void path_cd(char **argv, char *pathCD, char **env);
 
